@@ -1,0 +1,4 @@
+<launch>
+    <test test-name="test_range_filter" pkg="test_knex_ros" type="test_range_filter.py" />
+    <node pkg="knex_ros" type="range_filter.py" name="range_filter" output= "screen" />
+</launch>
