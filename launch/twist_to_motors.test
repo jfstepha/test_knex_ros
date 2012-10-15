@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="differential_drive" type="twist_to_motors.py" name="twist_to_motors" output="screen">
+    <rosparam param="base_width">0.245</rosparam>
+  </node>
+    <test test-name="test_twist_to_motors_noros" pkg="test_knex_ros" type="noros_twist_to_motors.py" />
+    <test test-name="test_twist_to_motors" pkg="test_knex_ros" type="test_twist_to_motors.py" />
+</launch>
