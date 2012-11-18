@@ -1,0 +1,7 @@
+<launch>
+<!-- 
+    <test test-name="test_diff_tfnoros" pkg="test_knex_ros" type="noros_diff_tf.py" />
+    -->
+    <node pkg="differential_drive" type="diff_tf.py" name="diff_tf" />
+    <test test-name="test_diff_tf" pkg="test_knex_ros" type="test_diff_tf.py" />
+</launch>
